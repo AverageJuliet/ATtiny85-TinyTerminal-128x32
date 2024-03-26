@@ -157,14 +157,14 @@ const uint8_t OLED_FONT[] PROGMEM = {
 const uint8_t OLED_INIT_CMD[] PROGMEM = {
   0xAE,             // display off
   0xD5, 0x80,       // set display clock
-  0xA8, 0x3F,       // set multiplex ratio  
+  0xA8, 0x1F,       // set multiplex ratio for 32 lines (0x1F)
   0xD3, 0x00,       // set display offset  
   0x40,             // set start line to zero
   0x8D, 0x14,       // set DC-DC enable  
   0x20, 0x02,       // set page addressing mode
-  0xC8, 0xA1,       // flip screen
-  0xDA, 0x12,       // set com pins
-  0x81, 0x7F,       // set contrast  
+  0xC8,             // flip screen (remove A1)
+  0xDA, 0x02,       // set com pins for 32 lines (0x02)
+  0x81, 0xAF,       // set contrast  
   0xD9, 0xF1,       // set pre charge 
   0xDB, 0x40,       // set vcom detect  
   0xA6,             // set normal (0xA7=Inverse)
