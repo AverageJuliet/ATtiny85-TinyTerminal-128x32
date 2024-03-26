@@ -1,6 +1,6 @@
 // TinyTerminal - OLED display with USB serial interface based on ATtiny45/85
 //
-// This code implements a simple USB controlled 128x64 pixels I2C OLED display.
+// This code implements a simple USB controlled 128x32 pixels I2C OLED display.
 // It uses V-USB to build a USB communication device class (CDC) for serial
 // communication via USB with the ATtiny.
 //
