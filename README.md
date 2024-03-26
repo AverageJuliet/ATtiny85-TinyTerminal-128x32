@@ -1,8 +1,7 @@
 # TinyTerminal - USB controlled OLED based on ATtiny85
 TinyTerminal is a simple USB controlled 128x32 pixels I2C OLED display. It uses [V-USB](https://www.obdev.at/products/vusb/index.html) to build a [USB communication device class (CDC)](https://en.wikipedia.org/wiki/USB_communications_device_class) for serial communication via USB with the ATtiny. Text messages of all kinds can be sent via the USB interface and shown on the OLED display. The integrated buzzer gives an acoustic signal for every message received.
 
-![pic1.jpg](https://github.com/wagiminator/ATtiny85-TinyTerminal/blob/main/documentation/TinyTerminal_pic1.jpg)
-![pic2.jpg](https://github.com/wagiminator/ATtiny85-TinyTerminal/blob/main/documentation/TinyTerminal_pic2.jpg)
+https://github.com/AverageJuliet/ATtiny85-TinyTerminal-128x32/assets/134985726/fa6e16f3-310d-442c-86d5-6f68aeae1184
 
 # Hardware
 The schematic is shown below:
@@ -10,7 +9,11 @@ The schematic is shown below:
 ![schematic.png](https://github.com/wagiminator/ATtiny85-TinyTerminal/blob/main/documentation/TinyTerminal_wiring.png)
 
 # Software
-The communication via USB is handled by the V-USB software-only implementation of a low-speed USB device. To simplify the software development with the Arduino IDE the [VUSB_AVR board package](https://github.com/wagiminator/VUSB-AVR) is used. It includes the VUSB_CDC library, which makes it easy to implement a serial communication via USB. The I²C OLED routine is based on [tinyOLEDdemo](https://github.com/wagiminator/ATtiny13-TinyOLEDdemo). The rest was adapted from the [Tiny Terminal by David Johnson-Davies](http://www.technoblogy.com/show?TV4).
+The communication via USB is handled by the V-USB software-onl
+
+
+
+y implementation of a low-speed USB device. To simplify the software development with the Arduino IDE the [VUSB_AVR board package](https://github.com/wagiminator/VUSB-AVR) is used. It includes the VUSB_CDC library, which makes it easy to implement a serial communication via USB. The I²C OLED routine is based on [tinyOLEDdemo](https://github.com/wagiminator/ATtiny13-TinyOLEDdemo). The rest was adapted from the [Tiny Terminal by David Johnson-Davies](http://www.technoblogy.com/show?TV4).
 
 # Compiling, Uploading and Testing
 - Open Arduino IDE.
